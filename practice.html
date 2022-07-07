@@ -3,17 +3,31 @@
 <head>
   <title>practice-html</title>
   <meta charset="utf-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JGSTH4TRQD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JGSTH4TRQD');
-</script>
+  <h3>css를 넣는 법: 스타일 태그를 사용하기, 스타일 속성을 사용하기,<p>
+  밑줄 없애기는 텍스트 데코레이션, 세미콜론은 단순 구분</p></h3>
+  <style>
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 350%;
+    text-align: center;
+  }
+  #active{
+    color:red;
+  }
+  .saw{
+    color:gray;
+  }
+
+  </style>
 </head>
 <body>
   <h1><a href="index.html">오늘 할 일</a></h1>
-  <h4>강의 듣기,<a href="내용.html" target="_blank" title="html5">복습하기</a>, 블로그 만들기, 깃허브 가입, 로아 숙제</h4>
+  <h4><a href="내용.html" target="_blank" title="html5" class="saw">강의듣기</a>
+  <a href="내용.html" target="_blank" title="html5" class="saw" id="active"
+  text-decoration:underline">복습하기</a>,
+    블로그 만들기, 깃허브 가입, 로아 숙제</h4>
   </body>
 <p><a href="1.html" target="_blank" title="html5">복습하는 방법</a></p>
