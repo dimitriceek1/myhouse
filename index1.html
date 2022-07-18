@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <div class="alert-box" id="물소">
+        <p id="멸치">Alert 박스</p>
+      <button id="close">닫기</button></div>
+      <button onclick="공군주('아이디를 입력 안했음')">버튼1</button>
+      <button onclick="공군주('비밀번호를 입력 안했음')">버튼2</button>
+
+
+      <script>
+
+        function 공군주(구멍){
+          document.getElementById('멸치').innerHTML = 구멍;
+          document.getElementById('물소').style.display= 'block';
+
+
+        }
+
+          document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('물소').style.display= 'none';
+          })
+
+
+
+      </script>
+  </body>
+</html>
