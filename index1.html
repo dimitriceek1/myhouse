@@ -6,6 +6,22 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+
+      <h4 id="test">안녕하세요</h4>
+
+    <script>
+
+        $('#test').css('color', 'red');
+
+    </script>
+
+
+
       <div class="alert-box" id="물소">
         <p id="멸치">Alert 박스</p>
       <button id="close">닫기</button></div>
@@ -14,6 +30,7 @@
 
 
       <script>
+
 
         function 공군주(구멍){
           document.getElementById('멸치').innerHTML = 구멍;
@@ -25,6 +42,7 @@
           document.getElementById('close').addEventListener('click', function(){
             document.getElementById('물소').style.display= 'none';
           })
+
 
 
 
